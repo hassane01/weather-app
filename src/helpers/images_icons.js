@@ -1,0 +1,21 @@
+import cloudy from '../assets/cloudy.jpg'
+import Clear from '../assets/Clear.jpg'
+import Foggy from '../assets/Foggy.jpg'
+import semicloud from '../assets/semicloud.jpg'
+import rainy from '../assets/rainy.jpg'
+import snowy from '../assets/snowy.jpg'
+import Stormy from '../assets/Stormy.jpg'
+import Windy from '../assets/Windy.jpg'
+
+import cloudicon from '../assets/icons/cloud.png'
+import foggyicon from '../assets/icons/foggy.png'
+import partlt_cloudicon from '../assets/icons/partly_cloudy.png'
+import rainyicon from '../assets/icons/rainy.png'
+import snowyicon from '../assets/icons/snowy.png'
+import stormicon from '../assets/icons/storm.png'
+import windyicon from '../assets/icons/windy-day.png'
+import Clearicon from '../assets/icons/clear.png'
+import humidity from '../assets/icons/humidity.png'
+import winds from '../assets/icons/wind.png'
+
+export {cloudy , semicloud , rainy , snowy , Stormy , Windy , Clear , Foggy , cloudicon , foggyicon , partlt_cloudicon , rainyicon,snowyicon , stormicon , windyicon , Clearicon , humidity , winds}
