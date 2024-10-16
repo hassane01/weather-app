@@ -9,7 +9,7 @@ const Weather = ({ unit, convertTemperature, onToggleUnit }) => {
    const [imageWetaher , setimageWetaher] = useState(cloudy)
    const [iconweather , seticonweather] = useState(foggyicon)
    const [SerachQuery , setSerachQuery] = useState('')
-   const {datav1 ,  setcity ,forcastedata,  setdegree} = useContext(Contextwetaher)
+   const {datav1 ,  setcity ,forcastedata} = useContext(Contextwetaher)
    const [TypeWeather , setTypeWeather] = useState([]);
    const [dayweather ,setdayweather ] = useState([])
    
@@ -97,7 +97,7 @@ useEffect(() => {
             
          </div>
          <div className='image'>
-            <img src={iconweather}/>
+            <img src={iconweather} alt='weather - image '/>
             <h2>{datav1 
     ? unitwether 
       ? `${datav1.main.temp.toFixed(1)}°C` 
@@ -108,8 +108,8 @@ useEffect(() => {
             
          </div>
          <div className='info'>
-            <div className='infotext'><p>{datav1?datav1.main.humidity:''}% <br/>Humidity</p><img src={humidity}/></div>
-            <div className='infotext'><p>{datav1?datav1.wind.speed:''}km/h<br/>Wind Speed </p><img src={winds}/></div>
+            <div className='infotext'><p>{datav1?datav1.main.humidity:''}% <br/>Humidity</p><img src={humidity} alt='weather - image '/></div>
+            <div className='infotext'><p>{datav1?datav1.wind.speed:''}km/h<br/>Wind Speed </p><img src={winds} alt='weather - image '/></div>
             
          </div>
         </div>
@@ -138,7 +138,7 @@ useEffect(() => {
             
               {forcastedata ? forcastedata.list.slice(1, 5).map((weather, key) => (
                  <div className='days' key={key}>
-                  <img className='dayicon' src={findrighticon(key)} />
+                  <img className='dayicon' src={findrighticon(key)} alt='weather - image ' />
                   <div className='date'>
                   {nextThreeDays[key].slice(0,3)}
                   </div>

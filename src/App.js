@@ -36,7 +36,7 @@ const App = () => {
     };
 
     fetchData();
-}, [city]);
+}, [city ,errorMessage , url]);
 
   useEffect(()=>{
     axios.get(urlforcaste).then(data=>setforcastedata(data.data))
@@ -48,7 +48,7 @@ const App = () => {
       }
     });
     
-  },[city])
+  },[city ,errorMessage, urlforcaste])
   
   return (
     <div className='App'>
