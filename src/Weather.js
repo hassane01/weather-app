@@ -97,7 +97,7 @@ useEffect(() => {
             
          </div>
          <div className='image'>
-            <img src={iconweather} alt='weather - image '/>
+            <img src={iconweather} alt='background image of the weatjer change  '/>
             <h2>{datav1 
     ? unitwether 
       ? `${datav1.main.temp.toFixed(1)}°C` 
@@ -108,8 +108,8 @@ useEffect(() => {
             
          </div>
          <div className='info'>
-            <div className='infotext'><p>{datav1?datav1.main.humidity:''}% <br/>Humidity</p><img src={humidity} alt='weather - image '/></div>
-            <div className='infotext'><p>{datav1?datav1.wind.speed:''}km/h<br/>Wind Speed </p><img src={winds} alt='weather - image '/></div>
+            <div className='infotext'><p>{datav1?datav1.main.humidity:''}% <br/>Humidity</p><img src={humidity} alt='image telling the humidity in the city   '/></div>
+            <div className='infotext'><p>{datav1?datav1.wind.speed:''}km/h<br/>Wind Speed </p><img src={winds} alt=' image showing how much it the wind speed '/></div>
             
          </div>
         </div>
@@ -138,7 +138,7 @@ useEffect(() => {
             
               {forcastedata ? forcastedata.list.slice(1, 5).map((weather, key) => (
                  <div className='days' key={key}>
-                  <img className='dayicon' src={findrighticon(key)} alt='weather - image ' />
+                  <img className='dayicon' src={findrighticon(key)} alt='icon of the weather type ' />
                   <div className='date'>
                   {nextThreeDays[key].slice(0,3)}
                   </div>
