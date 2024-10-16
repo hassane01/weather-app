@@ -97,7 +97,7 @@ useEffect(() => {
             
          </div>
          <div className='image'>
-            <img src={iconweather} alt='background image of the weatjer change  '/>
+            <img src={iconweather} alt='eather icon'/>
             <h2>{datav1 
     ? unitwether 
       ? `${datav1.main.temp.toFixed(1)}°C` 
@@ -108,8 +108,8 @@ useEffect(() => {
             
          </div>
          <div className='info'>
-            <div className='infotext'><p>{datav1?datav1.main.humidity:''}% <br/>Humidity</p><img src={humidity} alt='image telling the humidity in the city   '/></div>
-            <div className='infotext'><p>{datav1?datav1.wind.speed:''}km/h<br/>Wind Speed </p><img src={winds} alt=' image showing how much it the wind speed '/></div>
+            <div className='infotext'><p>{datav1?datav1.main.humidity:''}% <br/>Humidity</p><img src={humidity} alt='Humidity icon'/></div>
+            <div className='infotext'><p>{datav1?datav1.wind.speed:''}km/h<br/>Wind Speed </p><img src={winds} alt='Wind speed icon'/></div>
             
          </div>
         </div>
